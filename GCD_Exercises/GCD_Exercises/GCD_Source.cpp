@@ -31,7 +31,7 @@ int main() {
 		else if (a <= 0 || b <= 0) {
 			cout << "Invalid input: numbers must be greater than zero." << endl;
 		}
-		else if (a >= b) {
+		/*else if (a >= b) {
 			cout << "Invalid Input: first number is larger than second." << endl;
 			cout << "SWITCHING NUMBERS..." << endl;
 			int temp = a;
@@ -44,14 +44,14 @@ int main() {
 			// Recursion Method
 			cout << "Recursion finding GCD" << endl;
 			cout << "good = " << RecursionGCD(a, b) << endl;
-		}
-		else if (a < b) {
+		}*/
+		else /*if (a < b)*/ {
 		    cout << "Now we'll find the Greatest Common Denominator using two different methods." << endl;
 			// Brute Force Method
-			cout << "Brute Force finding GCD" << endl;
+			cout << "Brute Force Mehtod" << endl;
 			BruteForceGCD(a, b);
 			// Recursion Method
-			cout << "Recursion finding GCD" << endl;
+			cout << "Recursion Mehtod" << endl;
 			cout << "good = " << RecursionGCD(a, b) << endl;
 		}
 	}
