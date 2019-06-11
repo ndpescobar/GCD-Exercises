@@ -30,13 +30,13 @@ int main() {
 		if (a == 0 && b == 0) {//if user enters 0 twice, then break while loop.
 			break;
 		}
-		else if (b < a) {
+		else if (b < a) {//a < b
 			cout << "Invalid input: \"a\" must be smaller than \"b\"." << endl;
 		}
-		else if (a < 0 || b < 0) {
+		else if (a < 0 || b < 0) {// a > 0 && b > 0
 			cout << "Invalid input: numbers must be greater than zero." << endl;
 		}
-		else if (a >= 65535 || b >= 65535) {
+		else if (a >= 65535 || b >= 65535) {//max unsigned int
 			cout << "Invalid input: numbers cannot be bigger than \"65,535\"." << endl;
 		}
 		else {
@@ -63,7 +63,8 @@ int main() {
 	return 0;
 }
 
-/* This function will find and output the GCD, using the "Brute Force" Mehtod, between the two aguments,
+/* This function, BruteForceGCD, will find and output the GCD, 
+	using the "Brute Force" Mehtod, between the two aguments,
 	and does not return anything.
 */
 void BruteForceGCD(int a, int b) {
@@ -79,8 +80,9 @@ void BruteForceGCD(int a, int b) {
 	}
 }
 
-/* This function will find the GCD, using Euclid's Recursive Mehtod, between the two aguments,
-	and does return an int, or calls itself. Third argument helps keep track of number of omparisons.
+/* This function, RecursionGCD, will find the GCD, using Euclid's Recursive Mehtod, 
+	between the first two aguments, and does return an int, or calls itself. 
+	Third argument helps keep track of the number of comparisons.
 */
 int RecursionGCD(int a, int b, int countComparisons) {
 	int counter = countComparisons;
