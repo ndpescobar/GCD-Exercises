@@ -64,7 +64,7 @@ int main() {
 }
 
 /* This function, BruteForceGCD, will find and output the GCD, 
-	using the "Brute Force" Mehtod, between the two aguments,
+	using the "Brute Force" mehtod, between the two arguments,
 	and does not return anything.
 */
 void BruteForceGCD(int a, int b) {
@@ -81,7 +81,7 @@ void BruteForceGCD(int a, int b) {
 }
 
 /* This function, RecursionGCD, will find the GCD, using Euclid's Recursive Mehtod, 
-	between the first two aguments, and does return an int, or calls itself. 
+	between the first two arguments, and returns an int, or calls itself. 
 	Third argument helps keep track of the number of comparisons.
 */
 int RecursionGCD(int a, int b, int countComparisons) {
